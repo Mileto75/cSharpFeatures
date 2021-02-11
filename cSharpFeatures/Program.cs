@@ -50,7 +50,7 @@ namespace cSharpFeatures
             myBooks.Add(lotr1);
             myBooks.Add(lotr2);
             //multiple/collection short initialisation
-            List<Book> yourBooks = new List<Book>
+            Book[] yourBooks = new Book[]
             {
                 new Book{Id=1,Title="Rambo1",Pages=12,Sequel=null },
                 null,
@@ -58,11 +58,12 @@ namespace cSharpFeatures
                 new Book{Id=3,Title="Rambo3",Pages=12,Sequel=null },
                 new Book{Id=4,Title="Rambo4",Pages=12,Sequel=null },
             };
-
+            
             foreach(Book book in yourBooks)
             {
                 Console.WriteLine(book?.Title);
             } 
+
         }
     }
 }

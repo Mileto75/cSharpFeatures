@@ -58,13 +58,18 @@ namespace cSharpFeatures
                 new Book{Id=3,Title="Rambo3",Pages=12,Sequel=null },
                 new Book{Id=4,Title="Rambo4",Pages=12,Sequel=null },
             };
-            
             foreach(Book book in yourBooks)
             {
                 Console.WriteLine(book?.Title);
-            } 
+            }
+
+            IEnumerable<Game> gamesArray = new Game[]
+                {new Game{ Id=1,Title="Fifa2020"} };
+            IEnumerable<Game> gameList = new List<Game>
+            { new Game{ Id=1,Title="Mortal Kombat X"} };
 
         }
+        
     }
 }
 

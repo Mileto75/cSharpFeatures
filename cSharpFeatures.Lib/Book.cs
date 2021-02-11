@@ -10,5 +10,6 @@ namespace cSharpFeatures.Lib
         public string Title { get; set; }
         public int Pages { get; set; }
         public Book Sequel { get; set; }
+        public string Publisher { get; set; }
     }
 }
